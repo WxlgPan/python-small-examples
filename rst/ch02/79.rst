@@ -6,8 +6,9 @@ place)洗牌，节省存储空间**
 
 .. code:: python
 
-   from random import shuffle
+   from random import randint,shuffle
    lst = [randint(0,50) for _ in range(100)]
+   print(lst[:5]) # [28, 23, 50, 18, 20]
    shuffle(lst)
    print(lst[:5]) # [50, 3, 48, 1, 26]
 
